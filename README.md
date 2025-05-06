@@ -1,13 +1,10 @@
 # Trabalho de Programação Orientada a Objetos
----
 
+---
 ### Grupo 15
 - Pedro Florencio de Almeida Neto - 2513700
 - [Nome] - [Matrícula]
-
 ---
-
-
 
 Este repositório contém um projeto desenvolvido como parte da disciplina de **Programação Orientada a Objetos (POO)** dos cursos de **Inteligência Artificial** e **Análise e Desenvolvimento de Sistemas** da **Universidade de Fortaleza (UNIFOR)**.
 
