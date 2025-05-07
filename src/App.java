@@ -18,7 +18,7 @@ Autores:
 // Questão 01: Classes e Objetos
 
 public class Pessoa{
-    private int cpf;
+    private String cpf;
     private String nome;
     private int idade;
 
@@ -26,7 +26,7 @@ public class Pessoa{
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -45,11 +45,39 @@ public class Pessoa{
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    public void fazerAniversario() {
+        idade += 1;
+    }
 }
 
 public class Disciplina{
-    private int codigo;
+    private String codigo;
     private String nome;
     private String semestre;
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSemestre() {
+        return semestre;
+    }
+
+    public void setSemestre(String semestre) {
+        this.semestre = semestre;
+    }
 }
 
