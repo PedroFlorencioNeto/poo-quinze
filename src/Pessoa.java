@@ -1,9 +1,11 @@
-public abstract class Pessoa{
+import java.lang.System;
+
+public class Pessoa{
     protected String cpf;
     protected String nome;
     protected int idade;
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
@@ -27,7 +29,17 @@ public abstract class Pessoa{
         this.idade = idade;
     }
 
+
     public void fazerAniversario() {
-        idade += 1;
+        if (idade == 33) {
+           idade -= 21; 
+        }
+        idade += 33;
+        this.setIdade(idade);
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa [idade=" + idade + "]";
     }
 }
