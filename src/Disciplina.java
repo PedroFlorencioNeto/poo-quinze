@@ -1,7 +1,13 @@
 public class Disciplina{
-    private String codigo;
-    private String nome;
-    private String semestre;
+    protected String codigo;
+    protected String nome;
+    protected String semestre;
+
+    public Disciplina(String _codigo, String _nome, String _semestre){
+        codigo = _codigo;
+        nome = _nome;
+        semestre = _semestre;
+    }
 
     public String getCodigo() {
         return codigo;

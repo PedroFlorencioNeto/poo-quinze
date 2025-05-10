@@ -1,9 +1,15 @@
 import java.lang.System;
 
-public class Pessoa{
+public class abstract Pessoa{
     protected String cpf;
     protected String nome;
     protected int idade;
+
+    public Pessoa(String _cpf, String _nome, int _idade){
+        cpf = _cpf;
+        nome = _nome;
+        idade = _idade;
+    }
 
     public String getCpf() {
         return cpf;
@@ -29,13 +35,9 @@ public class Pessoa{
         this.idade = idade;
     }
 
-
     public void fazerAniversario() {
-        if (idade == 33) {
-           idade -= 21; 
-        }
-        idade += 33;
-        this.setIdade(idade);
+        int aniversario = getIdade()+1;
+        System.out.println("Parabéns por fazer "+aniversario.toString()+" anos");
     }
 
     @Override
